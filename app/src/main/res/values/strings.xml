@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherViewer</string>
+    <string name="api_key">Utilice su propia clave API de OpenWeatherMap.org para el valor de este recurso.</string>
+    <string name="web_service_url">http://api.openweathermap.org/data/2.5/forecast/daily?q=</string>
+    <string name="URL_invalida">URL invalida</string>
+    <string name="imagen_condición_climática">Una representación gráfica de las condiciones meteorológicas.</string>
+    <string name="alta_temperatura">Alto: %s</string>
+    <string name="baja_temperatura">Bajo: %s</string>
+    <string name="descripción_del_día">%1$s: %2$s</string>
+    <string name="humedad">Humedad: %s</string>
+    <string name="sugerencia_texto">Ingrese la ciudad (p. ej., Boston, MA, EE. UU.)</string>
+    <string name="error_de_lectura">No se pueden leer los datos meteorológicos</string>
+    <string name="conectar_error">No se puede conectar a OpenWeatherMap.org</string>
+
+</resources>
