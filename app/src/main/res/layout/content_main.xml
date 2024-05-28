@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="VisualLintBounds">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/locationEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sugerencia_texto"
-            android:singleLine="true"
-            android:inputType="textAutoComplete" />
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:hint="Enter city name (e.g.,London, UK)"
+            android:textColorHint="#546E7A"
+            tools:ignore="VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ListView
